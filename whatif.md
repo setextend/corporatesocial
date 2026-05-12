@@ -13,40 +13,40 @@ Combining Musk's aggressive managerial reduction with an automated Web3 labor in
 ```mermaid
 graph TD
     %% ---------------------------------------------------
-    %% ПЕРВЫЙ ГРАФ: Традиционная модель
+    %% FIRST GRAPH: Traditional Model
     %% ---------------------------------------------------
-    subgraph Традиционная модель
-        A[Собственник] --> B[Директор / VP]
-        B --> C[Мидл-менеджеры]
-        C --> D[Супервайзеры]
-        D --> E[Линейные Творцы]
+    subgraph Traditional Model
+        A[Sovereign Owner] --> B[VP]
+        B --> C[Middle Managers]
+        C --> D[Supervisors]
+        D --> E[Creators / Workers]
     end
 
-    %% ---------------------------------------------------
-    %% ВТОРОЙ ГРАФ: Модель Маска (находится строго под первым)
-    %% ---------------------------------------------------
-    subgraph Модель Маска
-        F[Илон Маск / СЕО] -->|Прямая связь| G[Инженеры / Рабочие]
-    end
-
-    %% Снимем автоматическое выравнивание в ряд, связав подграфы невидимой стрелкой
+    %% Invisible link to force vertical stacking
     E ~~~ F
 
     %% ---------------------------------------------------
-    %% ТРЕТИЙ ГРАФ: Гипер-плоская синергия (строго под вторым)
+    %% SECOND GRAPH: Musk Model
     %% ---------------------------------------------------
-    subgraph Гипер-плоская синергия
-        H[Собственник] -->|Алгоритмы| I[Смарт-контракты / LaborDAO]
-        I -->|Автономия + Защита| J[Свободные Творцы]
+    subgraph Musk Model
+        F[Elon Musk / CEO] -->|Direct Real-Time Communication| G[Engineers / Workers]
+        style G fill:#f9f,stroke:#333,stroke-width:2px;
+        %% High Burnout Rate implied
     end
 
-    %% Снова используем невидимую стрелку для фиксации порядка сверху-вниз
+    %% Invisible link to force vertical stacking
     G ~~~ H
 
-    %% Стилизация
-    style G fill:#f9f,stroke:#333;
-    style J fill:#bbf,stroke:#333;
+    %% ---------------------------------------------------
+    %% THIRD GRAPH: Hyper-Flat Synergy
+    %% ---------------------------------------------------
+    subgraph Hyper-Flat Synergy
+        H[Sovereign Owner] -->|Algorithmic Rules| I[Smart Contracts / LaborDAO]
+        I -->|High Autonomy + Protection| J[Empowered Creators]
+        style J fill:#bbf,stroke:#333,stroke-width:2px;
+    end
 ```
+
 
 
 By substituting human managers with immutable code, the friction between the owner's strategic vision and the creator's execution is reduced to zero.
