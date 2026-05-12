@@ -12,25 +12,42 @@ Combining Musk's aggressive managerial reduction with an automated Web3 labor in
 
 ```mermaid
 graph TD
-    subgraph Traditional Model
-        A[Sovereign Owner] --> B[VP]
-        B --> C[Middle Managers]
-        C --> D[Supervisors]
-        D --> E[Creators / Workers]
+    %% ---------------------------------------------------
+    %% ПЕРВЫЙ ГРАФ: Традиционная модель
+    %% ---------------------------------------------------
+    subgraph Традиционная модель
+        A[Собственник] --> B[Директор / VP]
+        B --> C[Мидл-менеджеры]
+        C --> D[Супервайзеры]
+        D --> E[Линейные Творцы]
     end
 
-    subgraph Musk Model
-        F[Elon Musk / CEO] -->|Direct Real-Time Communication| G[Engineers / Workers]
-        style G fill:#f9f,stroke:#333,stroke-width:2px;
-        %% Note: High Burnout Rate
+    %% ---------------------------------------------------
+    %% ВТОРОЙ ГРАФ: Модель Маска (находится строго под первым)
+    %% ---------------------------------------------------
+    subgraph Модель Маска
+        F[Илон Маск / СЕО] -->|Прямая связь| G[Инженеры / Рабочие]
     end
 
-    subgraph Hyper-Flat Synergy
-        H[Sovereign Owner] -->|Algorithmic Rules| I[Smart Contracts / LaborDAO]
-        I -->|High Autonomy + Protection| J[Empowered Creators]
-        style J fill:#bbf,stroke:#333,stroke-width:2px;
+    %% Снимем автоматическое выравнивание в ряд, связав подграфы невидимой стрелкой
+    E ~~~ F
+
+    %% ---------------------------------------------------
+    %% ТРЕТИЙ ГРАФ: Гипер-плоская синергия (строго под вторым)
+    %% ---------------------------------------------------
+    subgraph Гипер-плоская синергия
+        H[Собственник] -->|Алгоритмы| I[Смарт-контракты / LaborDAO]
+        I -->|Автономия + Защита| J[Свободные Творцы]
     end
+
+    %% Снова используем невидимую стрелку для фиксации порядка сверху-вниз
+    G ~~~ H
+
+    %% Стилизация
+    style G fill:#f9f,stroke:#333;
+    style J fill:#bbf,stroke:#333;
 ```
+
 
 By substituting human managers with immutable code, the friction between the owner's strategic vision and the creator's execution is reduced to zero.
 
