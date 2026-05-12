@@ -1,5 +1,9 @@
 # corporatesocial
 Decentralized Business Ecosystem
+## 📄 License / Лицензия
+
+This project is open-source and licensed under the Open Business License. See the [LICENSE](LICENSE) file for details.
+Проект является открытым. Оригинальные концепции защищены открытой лицензией. Подробнее в файле [LICENSE](LICENSE).
 
 ## Project Documentation
 
